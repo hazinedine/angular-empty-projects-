@@ -1,16 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { STUDENTS } from 'src/app/model/student-const/studentConst';
 import { Student } from 'src/app/model/student-const/student';
+import { StudentService } from 'src/app/services/student.service';
 @Component({
   selector: 'app-students',
   templateUrl: './students.component.html',
   styleUrls: ['./students.component.css']
 })
-export class StudentsComponent {
-  students: Student[] = STUDENTS;
+export class StudentsComponent  implements OnInit {
+  students: Student[] = [];
+
+  constructor(private studentService: StudentService) {}
+
+  ngOnInit() : void {
+    this.getStudents();
+  }
+
+  getStudents() {
+    this.students = this.studentService.getStudents();
+  }
 
   deleteStudent(stdId: string){
-    this.students = this.students.filter((student) => student.id !== stdId);    
+    this.studentService.deleteStudent(stdId); 
+    this.getStudents();
   }
  
 }

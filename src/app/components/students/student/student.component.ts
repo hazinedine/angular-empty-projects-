@@ -9,9 +9,8 @@ export class StudentComponent implements OnInit{
 
   @Input() data!: Student;
   @Output() sendDeleteEvent: EventEmitter<string> = new EventEmitter();
-  ngOnInit(){
 
-  }
+   ngOnInit(): void {}
 
   deleteStudent() {
     this.sendDeleteEvent.emit(this.data.id);
