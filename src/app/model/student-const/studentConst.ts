@@ -5,7 +5,7 @@ export const STUDENTS:Student[] = [
     name: 'Rakesh Rout',
     dateOfBirth: new Date(1988, 3, 15),
     gender: 'Male',
-    picture: 'https://www.w3schools.com/howto/img_avatar.png'
+    picture: 'assets/images/img_avatar.png'
    
   },
   {
@@ -14,7 +14,7 @@ export const STUDENTS:Student[] = [
     dateOfBirth: new Date(1989, 10, 14),
     gender: 'Male',
    // courseFee: 6666.0,
-    picture: 'https://www.w3schools.com/howto/img_avatar.png'
+    picture: 'assets/images/img_avatar.png'
    // email: 'test@mail.fr',
   },
   {
@@ -23,7 +23,7 @@ export const STUDENTS:Student[] = [
     dateOfBirth: new Date(1992, 1, 15),
     gender: 'Female',
    // courseFee: 6543.15,
-    picture: 'https://www.w3schools.com/howto/img_avatar2.png'
+    picture: 'assets/images/img_avatar2.png'
    // email: 'test@mail.fr',
   },
   {
@@ -32,7 +32,7 @@ export const STUDENTS:Student[] = [
     dateOfBirth: new Date(1990, 9, 12),
     gender: 'Female',
    // courseFee: 9000.5,
-    picture: 'https://www.w3schools.com/howto/img_avatar2.png'
+    picture: 'assets/images/img_avatar2.png'
    // email: 'test@mail.fr',
   },
   {
@@ -41,7 +41,7 @@ export const STUDENTS:Student[] = [
     dateOfBirth: new Date(1991, 8, 15),
     gender: 'Male',
    // courseFee: 9876.54,
-    picture: 'https://www.w3schools.com/howto/img_avatar.png'
+    picture: 'assets/images/img_avatar.png'
    // email: 'test@mail.fr',
   },
 ];
